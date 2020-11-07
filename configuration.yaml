@@ -10,3 +10,13 @@ group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
+
+
+
+
+# Custom config
+lovelace:
+  mode: yaml
+  resources:
+    - url: /local/mini-media-player-bundle.js?v=1.11.0
+      type: module
