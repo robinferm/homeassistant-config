@@ -1,6 +1,0 @@
-title: Home
-
-views:
-  - title: Main Dashboard
-    cards: 
-      - !include lovelace/modules/stuff.yaml
