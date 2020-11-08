@@ -13,3 +13,7 @@ views:
  - title: Media Player
    cards:
     - !include lovelace/media-player.yaml
+
+ - title: Lights
+   cards:
+    - !include lovelace/lights.yaml
