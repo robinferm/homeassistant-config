@@ -26,12 +26,18 @@ lovelace:
 
   
   dashboards:
-    lovelace-generated:
+    lights-dashboard:
       mode: yaml
-      filename: testDash.yaml
-      title: testDash
+      filename: lovelace/lights-dashboard.yaml
+      title: Lights
       show_in_sidebar: true
 
+    speakers-dashboard:
+      mode: yaml
+      filename: lovelace/speakers-dashboard.yaml
+      title: Speakers
+      show_in_sidebar: true
+          
 
 
 spotify:
