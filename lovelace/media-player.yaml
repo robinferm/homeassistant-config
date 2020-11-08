@@ -1,0 +1,53 @@
+#title: Stuff2
+type: entities
+entities:
+  - type: "custom:mini-media-player"
+    entity: media_player.spotify_robin_ferm
+    group: true
+    name: All Speakers
+    sync_volume: true
+    shortcuts:
+      buttons:
+        - name: test start playlist
+          type: playlist
+          id: spotify:playlist:0C6TevryWaqNEHJYCD2Tqa
+          hide:
+            power: true
+            shuffle: false
+            volume_level: false
+
+  - type: "custom:mini-media-player"
+    entity: media_player.sovrum
+    group: true
+    icon: "mdi:cast-audio"
+    hide:
+      controls: true
+      power: true
+      progress: true
+      info: true
+      source: true
+      volume_level: false
+
+  - type: "custom:mini-media-player"
+    entity: media_player.vardagsrum
+    group: true
+    icon: "mdi:cast-audio"
+    hide:
+      controls: true
+      power: true
+      progress: true
+      info: true
+      source: true
+      volume_level: false
+
+  - type: "custom:mini-media-player"
+    entity: media_player.badrum
+    group: true
+    icon: "mdi:dog"
+    hide:
+      controls: true
+      power: true
+      progress: true
+      info: true
+      source: true
+      volume_level: false

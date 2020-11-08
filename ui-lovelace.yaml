@@ -1,4 +1,15 @@
 title: Home
 
 views:
-  - !include lovelace/main.yaml
+ # - !include lovelace_views/00-home.yaml
+ # - !include lovelace_views/01-mini-media-player.yaml
+
+
+ - title: Main Dashboard
+   cards: 
+    - !include lovelace/stuff.yaml
+
+
+ - title: Media Player
+   cards:
+    - !include lovelace/media-player.yaml
