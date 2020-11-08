@@ -1,0 +1,53 @@
+type: vertical-stack
+cards:
+  - type: glance
+    show_name: true
+    show_state: true
+    entities:
+    - entity: light.sovrum
+      tap_action:
+        action: toggle
+    - entity: light.vardagsrum
+      tap_action:
+        action: toggle
+    - entity: light.entre
+      tap_action:
+        action: toggle
+    - entity: light.hall
+      tap_action:
+        action: toggle
+    - entity: light.kok
+      tap_action:
+            action: toggle
+
+  # Hue scenes
+  - type: horizontal-stack
+    cards:
+      - type: button
+        name: "Off"
+        icon: mdi:lightbulb-off
+        tap_action:
+                action: call-service
+                service: light.turn_off
+                service_data:
+                  entity_id: light.all_lights
+                  
+      - type: button
+        name: Relax
+        icon: mdi:lightbulb-on-outline
+        tap_action:
+                action: call-service
+                service: hue.hue_activate_scene
+                service_data:
+                  group_name: All_Lights
+                  scene_name: Koppla av
+      
+      - type: button
+        name: Bright
+        icon: mdi:lightbulb-on
+        tap_action:
+                action: call-service
+                service: hue.hue_activate_scene
+                service_data:
+                  group_name: All_Lights
+                  scene_name: Klart ljus
