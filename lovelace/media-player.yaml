@@ -1,26 +1,54 @@
 type: entities
 entities:
-# All Speakers
+# Playlists
+  - type: "custom:spotify-card"
+    device: "All speakers"
+    default_device: "All speakers"
+    limit: 5
+    always_play_random_song: true
+
+  # - type: "custom:mini-media-player"
+  #   entity: media_player.spotify_robin_ferm
+  #   group: true
+  #   name: All Speakers
+  #   sync_volume: true
+  #   hide:
+  #     power: true
+  #     shuffle: false
+  #     volume_level: false
+  #   shortcuts:
+  #     buttons:
+  #       - name: test start playlist
+  #         type: playlist
+  #         id: spotify:playlist:0C6TevryWaqNEHJYCD2Tqa
+    
+# All speakers
   - type: "custom:mini-media-player"
+    name: All Speakers
     entity: media_player.spotify_robin_ferm
     group: true
-    name: All Speakers
+    icon: "mdi:cast-audio"
     sync_volume: true
+    max_volume: 50
+    volume_step: 3
+    #volume_stateless: true
     hide:
+      controls: true
       power: true
-      shuffle: false
+      progress: true
+      info: true
+      source: true
       volume_level: false
-    shortcuts:
-      buttons:
-        - name: test start playlist
-          type: playlist
-          id: spotify:playlist:0C6TevryWaqNEHJYCD2Tqa
-    
+      mute: false
+
 # Sovrum
   - type: "custom:mini-media-player"
     entity: media_player.sovrum
     group: true
     icon: "mdi:cast-audio"
+    max_volume: 50
+    volume_step: 3
+    #volume_stateless: true
     hide:
       controls: true
       power: true
@@ -34,6 +62,9 @@ entities:
     entity: media_player.vardagsrum
     group: true
     icon: "mdi:cast-audio"
+    max_volume: 50
+    volume_step: 3
+    #volume_stateless: true
     hide:
       controls: true
       power: true
@@ -46,6 +77,9 @@ entities:
     entity: media_player.badrum
     group: true
     icon: "mdi:cast-audio"
+    max_volume: 50
+    volume_step: 3
+    #volume_stateless: true
     hide:
       controls: true
       power: true
@@ -53,3 +87,6 @@ entities:
       info: true
       source: true
       volume_level: false
+
+
+    
